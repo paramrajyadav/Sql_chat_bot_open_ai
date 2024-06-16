@@ -1,0 +1,12 @@
+CREATE TABLE salaries (
+    experience_level VARCHAR(250),
+    employment_type VARCHAR(250),
+    job_title VARCHAR(250),
+    salary INT,
+    salary_currency VARCHAR(250),
+    salary_in_usd INT,
+    employee_residence VARCHAR(250),
+    remote_ratio INT,
+    company_location VARCHAR(250),
+    company_size VARCHAR(250)
+);
