@@ -21,7 +21,7 @@ This repository provides a user-friendly SQL chatbot that simplifies extracting 
 git clone https://github.com/paramrajyadav/sql_chat_bot.git
 ```
 ```bash
-cd sql-chatbot
+cd sql_chat_bot
 ```
 ```bash
 pip install -r requirements.txt
