@@ -51,10 +51,10 @@ def drop_sqlite_database():
     
 
 
-def setup_database():
+def setup_database(proj_dir=r"C:\Users\pcraj\OneDrive\Desktop\projects\new_test")):
 
     import sqlite3
-    create_table_query=read_query_from_file()
+    create_table_query=read_query_from_file(proj_dir)
     # create_table_query_2 =create_table_querry
 
     # print(create_table_query_2)

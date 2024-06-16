@@ -49,7 +49,7 @@ elif selected_index == 1:
     if st.button("Insert values in the database"):
         file_name_from_file(project_dir)
         drop_sqlite_database()
-        setup_database()
+        setup_database(project_dir)
         import_csv(project_dir)
     st.markdown(" # Proceed to the QA Part")
 

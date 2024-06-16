@@ -14,19 +14,19 @@ def initiate_chat(querry):
     notebook_login()
 
     # Set environment variables for API keys
-    # os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-    # os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-    # os.environ["LANGCHAIN_TRACING_V2"] = "true"
+    os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+    os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+    os.environ["LANGCHAIN_TRACING_V2"] = "true"
 
     # Define the SQL database URI
     db_uri = "sqlite:///db.db"
 
     # Initialize the SQLDatabase object
     db = SQLDatabase.from_uri(db_uri)
-    api_key = hf_secrets.get("open_api")
+    # api_key = hf_secrets.get("open_api")
 
     # Initialize the ChatOpenAI object with the desired model
-    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, api_key=api_key)
+    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
     # llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
     # Create the SQL agent
